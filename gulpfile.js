@@ -13,12 +13,6 @@ function buildStyles() {
       .pipe(gulp.dest('HW_12/src/css'));
 };
 
-function buildStyles() {
-   return gulp.src('HW_17/assets/scss/**/*.scss', "!" + "HW_17/assets/scss/**/_*.scss")
-      .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('HW_17/src/css'));
-};
-
 function watchFiles() {
    gulp.watch ('HW_*/assets/scss/**/*.scss', buildStyles)
 }
