@@ -1,0 +1,178 @@
+*{
+   padding: 0;margin: 0;
+   border: 0;
+   user-select: none;
+}
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   touch-action: pan-x pan-y;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/*header*/
+
+.header__container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 54px;
+   position: relative;
+   margin-top: 13px;
+}
+
+.header__language {
+   font-family: 'Tourney';
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 18px;
+   text-align: center;
+   letter-spacing: 0.04em;
+   position: absolute;
+   top: 16px;
+   left: 0px;
+}
+.header__menu {
+   position: absolute;
+   top: 17px;
+   left: 100px;
+}
+
+.menu__item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+.menu__link {
+   font-family: 'Staatliches';
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 28px;
+   letter-spacing: 0.03em;
+   color: #000000;
+}
+.header__logo {
+   position: absolute;
+   top: 3px;
+   right: 0px;
+}
+
+/*---------------chapter1-----------------------*/
+.page__chapter1 {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   min-height: 221px;
+   margin-top: 70px;
+}
+
+.page__title {
+   display: flex;
+   gap: 10px;
+}
+
+.title__main {
+   font-family: 'Francois One';
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 48px;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #000000;
+}
+.title__chapter {
+   font-family: 'Farro';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 30px;
+   line-height: 30px;
+   letter-spacing: 0.04em;
+   color: #000000;
+}
+.page__text {
+   font-family: 'PT Sans reg';
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 48px;
+   color: #000000;
+}
+
+.text__underline {
+   text-decoration: underline;
+   color: #000000;
+}
+
+/*---------------chapter2-----------------------*/
+
+.page__chapter2 {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   min-height: 318px;
+   margin-top: 70px;
+}
+
+.text__italic {
+   font-family: 'PT Sans ital';
+}
+
+/*---------------chapter3-----------------------*/
+
+.page__chapter3 {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   min-height: 993px;
+   margin-top: 70px;
+}
+
+.text__bold {
+   font-family: 'PT Sans bold';
+   font-weight: 700;
+}
+.text__background {
+   display: inline-block;
+   background-color: #DADADA;
+}
+
+/*---------------chapter4-----------------------*/
+
+.page__chapter4 {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   min-height: 393px;
+   margin-top: 70px;
+}
