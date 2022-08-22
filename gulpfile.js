@@ -7,8 +7,9 @@ function buildStyles() {
       .pipe(gulp.dest('HW_13/crs/css'));
 };
 
+
 function watchFiles() {
-   gulp.watch ('HW_13/assets/scss/**/*.scss', buildStyles)
+   gulp.watch ('HW_*/assets/scss/**/*.scss', buildStyles)
 }
 
 let build = gulp.series(gulp.parallel(buildStyles));
