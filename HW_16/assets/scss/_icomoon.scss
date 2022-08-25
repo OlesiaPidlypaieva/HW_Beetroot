@@ -1,0 +1,101 @@
+@font-face {
+   font-family: 'icomoon';
+   src: url('../../fonts/icomoon.woff?thqz28') format('woff'),
+;
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icomoon';
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bubble:before {
+   content: "\e900";
+   color: #bdbdbd;
+}
+
+.header__icon2:hover .icon-bubble:before {
+   content: "\e900";
+   color: #fff;
+   cursor: url("../../img/cursor.svg") , pointer;
+}
+
+.icon-calendar:before {
+   content: "\e901";
+   color: #bdbdbd;
+}
+
+.header__icon3:hover .icon-calendar:before {
+   content: "\e901";
+   color: #fff;
+   cursor: url("../../img/cursor.svg") , pointer;
+}
+
+.icon-change-theme:before {
+   content: "\e902";
+   color: #bdbdbd;
+}
+
+.header__icon5:hover .icon-change-theme:before {
+   content: "\e902";
+   color: #fff;
+   cursor: url("../../img/cursor.svg") , pointer;
+}
+
+   .icon-mail:before {
+   content: "\e903";
+   color: #bdbdbd;
+}
+
+.header__icon1:hover .icon-mail:before {
+   content: "\e903";
+   color: #fff;
+   cursor: url("../../img/cursor.svg") , pointer;
+}
+
+.icon-search:before {
+   content: "\e904";
+   color: #bdbdbd;
+}
+
+.header__icon6:hover .icon-search:before {
+   content: "\e904";
+   color: #fff;
+   cursor: url("../../img/cursor.svg") , pointer;
+}
+.icon-set:before {
+   content: "\e905";
+   color: #bdbdbd;
+}
+
+.header__icon7:hover .icon-set:before {
+   content: "\e905";
+   color: #fff;
+   cursor: url("../../img/cursor.svg") , pointer;
+}
+
+
+.icon-star:before {
+   content: "\e906";
+   color: #bdbdbd;
+}
+
+.header__icon4:hover .icon-star:before {
+   content: "\e906";
+   color: #fff;
+   cursor: url("../../img/cursor.svg") , pointer;
+}
+
+
