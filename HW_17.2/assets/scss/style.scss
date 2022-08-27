@@ -1,0 +1,238 @@
+@import "_zero.scss" , "_fonts.scss";
+
+%mainfont {
+   font-family: 'Lato 400';
+   font-style: normal;
+   font-weight: 400;
+   color: #565656;
+}
+
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   min-height: 100px;
+   h1 {
+   @extend %mainfont;
+   font-size: 16px;
+   line-height: 150%;
+   letter-spacing: 0.5em;
+   }
+
+   @media (max-width:767px) {
+         min-height: 60px;
+   }
+}
+
+.main {
+   &__first-screen {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      margin-bottom: 90px;
+
+      @media (max-width:767px) {
+         gap: 50px;
+         margin-bottom: 70px;
+      }
+      @media (max-width:320px) {
+         gap: 40px;
+      }
+   }
+
+   .first-screen {
+      &__title {
+         font-family: 'Red Hat Display 600';
+         font-weight: 600;
+         font-size: 48px;
+         line-height: 133%;
+         letter-spacing: 0.05em;
+
+         @media (max-width:767px) {
+         font-size: 33px;
+         line-height: 152%;
+         }
+         @media (max-width:320px) {
+         font-size: 30px;
+         line-height: 167%;
+         }
+      }
+      &__img {
+         max-width: 1170px;   
+
+         picture img {
+         width: 100%;
+         top: 0;
+         left: 0;
+         }
+      }
+   }
+
+   &__descriptons {
+      display: flex;
+      flex-direction: column;
+      width: 49%;
+      gap: 50px;
+      margin-bottom: 90px;
+      @media (max-width:767px) {
+         width: 100%;
+         margin-bottom: 70px;
+         }
+      @media (max-width:320px) {
+         gap: 40px;
+         }
+   }
+
+   &__title {
+      font-family: 'Red Hat Display 600';
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 166%;
+      letter-spacing: 0.1em;
+      @media (max-width:320px) {
+         font-size: 28px;
+      }
+   }
+
+   &__description {
+      @extend %mainfont;
+      font-size: 19px;
+      line-height: 32px;
+      letter-spacing: 0.05em;
+      @media (max-width:320px) {
+         font-size: 16px;
+      }
+   }
+
+   &__main-content {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 90px;
+      p:not(:last-child) {
+         margin-bottom: 20px;
+      }
+      @media (max-width:767px) {
+         margin-bottom: 70px;
+      }
+   }   
+
+   &__img {
+      max-width: 1170px;
+      padding: 50px 0 20px 0;  
+      
+      @media (max-width:320px) {
+         padding: 40px 0 20px 0;
+         }
+
+      picture img {
+      width: 100%;
+      top: 0;
+      left: 0;
+      }
+   }
+}
+
+.footer {
+   background: #F4F4F4;
+
+   &__wrapper {
+      display: flex ;
+      flex-direction: column;
+      gap: 20px;
+   
+   }
+   &__contacts {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
+      padding: 10px;
+   }
+   &__tel-mail {
+      display: flex;
+      flex-direction: column;
+      h3 {
+         font-family: 'Red Hat Display 400';
+         font-weight: 400;
+         font-size: 48px;
+         line-height: 64px;
+         letter-spacing: 0.05em;
+         margin-bottom: 30px;
+      }
+
+      p {
+         font-family: 'Lato 400';
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 166%;
+         letter-spacing: 0.1em;
+      }
+   }
+   &__socials {
+      display: flex;
+      gap: 23px;
+      padding-top: 55px;
+   }
+
+   &__sosial:hover {
+      
+      svg {
+         background-color: #565656;
+      }
+      path {
+         fill:white;
+      }
+      rect {
+         stroke: #565656;
+      }
+
+      cursor: url("../../img/cursor.svg"), pointer;
+   }
+
+   &__copyright {
+      margin: 0 auto;
+      font-family: 'Lato 400';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 166%;
+      letter-spacing: 0.1em;
+      padding-bottom: 30px;
+   }
+
+   @media (max-width:767px) {     
+      &__contacts {
+         flex-direction: column;
+         margin-top: 50px;
+         text-align: center;
+      }
+      &__tel-mail {
+         align-items: center;
+         justify-content: center;
+      }
+      &__socials {
+         align-items: center;
+         justify-content: center;
+      }
+      &__copyright {
+         font-size: 16px;
+         text-align: center;
+         padding-bottom: 50px;
+      }
+   }
+   @media (max-width:320px) {
+
+      &__tel-mail {
+         h3 {
+            font-size: 32px;
+            line-height: 42px;
+         }   
+         p {
+            font-size: 18px;
+         }     
+      }
+   }
+}
