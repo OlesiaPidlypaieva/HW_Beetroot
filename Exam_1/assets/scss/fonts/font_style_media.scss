@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+   .description-font {
+      font-size: 17px;
+      opacity: 1;
+   }
+}
+
+@media (max-width: 767px) {
+   
+   .description-font {
+      font-size: 14px;
+      opacity: 1;
+   }
+   .title-font-italic {
+      color: #408a7c;
+   }
+
+   .title-font {
+      font-size: 30px;
+   }
+}

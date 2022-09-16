@@ -1,0 +1,53 @@
+@media (max-width: 992px) {
+
+.reviews {
+   margin-bottom: 60px;
+
+   &__wrapper {
+      gap: 20px;
+   }
+
+   &__heading {
+      gap: 20px;
+      max-width: 670px;
+   }
+
+   &__title {
+      font-size: 35px;
+      line-height: 120%;
+   }
+
+   &__client-reviews {
+      gap: 10px;
+   }
+
+   &__client-review {
+      background: rgba(25, 28, 41, 0.8);
+   }
+
+   &__text {
+      padding: 10px 10px;
+
+      .reviews__client-review-descr {
+         font-size: 16px;
+         line-height: 26px;
+         color: #FFFFFF;
+      }
+   
+      .reviews__client-review-author {
+         font-size: 20px;
+         line-height: 20px;
+         color: #FFFFFF;
+         }
+      }   
+   }  
+}
+
+@media (max-width: 767px) {
+   .reviews {
+      &__client-reviews {
+         grid-template-rows: repeat(3, 1fr );
+         grid-template-columns: 1fr;
+      }
+   }
+}

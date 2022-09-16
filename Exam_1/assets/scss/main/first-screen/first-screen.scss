@@ -1,0 +1,51 @@
+.first-screen {
+
+   margin: 150px 0 150px 0;
+
+   &__image img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+   }
+
+   .image {
+      .image__dark {
+         display: none;
+      }
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title {
+
+      max-width: 523px;
+      font-size: 44px;
+      line-height: 118%;
+   }
+
+   &__description {
+      max-width: 439px;
+      margin: 20px 0 50px 0;
+   }
+}
+
+//dark
+
+body.dark {
+   .image {
+      .image__dark {
+         display: block;
+      }
+
+      .image__light {
+         display: none;
+      }
+   }
+}
+

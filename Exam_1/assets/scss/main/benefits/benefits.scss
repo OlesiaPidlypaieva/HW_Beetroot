@@ -1,0 +1,35 @@
+.benefits {
+   margin-bottom: 120px;
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,280px);
+      column-gap: 30px;
+      row-gap: 60px;
+      
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 50px 30px 20px 30px;
+      border-top: 1px solid #E4E4E4;
+   }
+
+   &__title {
+      font-size: 40px;
+      line-height: 120%;
+   }
+}
+
+//dark
+
+body.dark {
+   .benefits {
+      &__item {
+         border-top: 1px solid #515773;
+      }
+   }
+}
