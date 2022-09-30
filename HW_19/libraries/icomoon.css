@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clubs:before {
+  content: "\e900";
+  color: #fff066;
+}
+.icon-clubsBig:before {
+  content: "\e901";
+  color: #b366ff;
+}
+.icon-diamon2:before {
+  content: "\e902";
+  color: #b366ff;
+}
+.icon-diamond:before {
+  content: "\e903";
+  color: #b366ff;
+}
+.icon-hearts:before {
+  content: "\e904";
+  color: #b366ff;
+}
+.icon-hearts2:before {
+  content: "\e905";
+  color: #b366ff;
+}
+.icon-spades:before {
+  content: "\e906";
+  color: #fff066;
+}
+.icon-spades2:before {
+  content: "\e907";
+  color: #b366ff;
+}
