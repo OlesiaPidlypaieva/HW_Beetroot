@@ -1,0 +1,43 @@
+#pageSwiper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__pagination {
+  position: absolute;
+  top: 50%;
+  right: 52px;
+  transform: translate(0px, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.page__bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(84, 86, 193, 0.8);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.page__bullet_active {
+  background-color: rgba(84, 86, 193, 0.8);
+}
+
+.page__pagination.light .page__bullet {
+  border: 1px solid white;
+}
+
+.page__pagination.light .page__bullet_active {
+  background-color: white;
+}

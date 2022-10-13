@@ -1,0 +1,121 @@
+
+.contact {
+   height: 100vh;
+   position: relative;
+}
+
+#map {
+   width: 100%;
+   height: 700px;
+   background: #66BEFF;
+   opacity: 0.8;
+}
+
+.form {
+   max-width: 770px;
+   min-height: 450px;
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 42px;
+   position: absolute;
+   background-color: white;
+   top: calc(50vh - 225px);
+   left: calc(50vw - 385px);
+
+   &__main {
+      display: flex;
+      gap: 54px;
+      padding-bottom: 68px;
+   }
+
+   &__contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+   }
+
+   &__contact {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      i {
+         font-size: 18px;
+         line-height: 28px;
+         color: #7E5AFF;
+      }
+
+      span {
+         font-family: 'Montserrat';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 27px;
+         color: #000000;
+      }
+   }
+
+   &__mainForm {
+      width: 310px;
+   }
+
+   &__form-place {
+      width: 100%;
+      min-height: 195px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+
+      .form__input {
+      height: 41px;
+      width: 100%;
+   }
+
+   input:placeholder-shown {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #4B5562;
+      opacity: 0.5;         
+      border-bottom: 1px solid rgba(44, 64, 88, 0.2);
+      padding-bottom: 10px;
+   }
+
+   .form__input {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #4B5562;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgb(44, 64, 88);
+      }
+   }
+   
+   .form__button {
+      width: 140px;
+      height: 50px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #000000;
+      border: 1px solid #2C4058;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+   }
+   
+   .form__input._error {
+      box-shadow: 0 0 5px red;
+   }
+}

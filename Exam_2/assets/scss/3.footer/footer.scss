@@ -1,0 +1,27 @@
+.footer {
+   min-height: 549px;
+   background: url('../img/6.Footer/Background.webp') center / cover no-repeat, linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+
+   .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 369px;
+      padding-top: 203px;
+      }
+
+   .navigation__logo {
+      display: flex;
+      flex-direction: column;
+      gap:41px;
+   }
+
+   .navigation__copyrights {
+      font-family: 'Montserrat';
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+   }
+}

@@ -1,0 +1,44 @@
+.navigation {
+   
+   &__logo {
+      transition-duration: 0.3s;
+   }
+
+   &__logo:hover {
+      transform: scale(1.05);
+   }
+   &__socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+   }
+   &__social {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid rgb(255, 255, 255, 0.4);
+      transition-duration: 0.5s;
+
+      i {
+         font-size: 16px;
+         line-height: 18px;
+         color: rgba(255, 255, 255);
+         transition-duration: 0.5s;
+      }
+   }
+
+   &__social:hover {
+      background-color: rgb(255, 255, 255, 0.8);
+      transform: scale(0.9);
+
+      i {
+         color: rgb(84, 86, 193);
+         font-size: 20px;
+      }
+   }
+}
