@@ -6,14 +6,19 @@
       margin-top: 200px;
       margin-bottom: 90px;
 
+      @media (min-width: 1601px) {
+         margin-top: 100px;
+      }
+
       @media (max-width: 1600px) {
          margin-top: 100px;
          margin-bottom: 50px;
       }
       
-      @media (max-width: 1100px) {
-         margin-top: 50px;
-         margin-bottom: 50px;
+      @media (max-width: 1400px) {
+         margin-top: 60px;
+         margin-bottom: 10px;
+            gap:10px;
       }
    }
 
@@ -25,7 +30,7 @@
    }
    &__images {
       cursor: url(../img/4.Gallery/search.png) , pointer;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -100,7 +105,7 @@
       font-size: 14px;
       line-height: 17px;
       color: #000000;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
    }
 }
 

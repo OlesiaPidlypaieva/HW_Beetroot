@@ -88,6 +88,15 @@
    }
 }
 
+@media (max-width:1400px) {
+   .main-title {
+      gap: 5px;
+      h2 {
+         font-size: 35px;
+      }
+   }
+}
+
 @media (max-width: 1023px) {
    .firstscreen {
       flex: none;
