@@ -1,0 +1,41 @@
+.title-font {
+   font-family: 'Playfair Display';
+   font-style: normal;
+   font-weight: 400;
+   color: #262A3F;
+}
+
+.title-font-italic {
+   font-family: 'Playfair Display';
+   font-style: italic;
+   font-weight: 400;
+   color: #85BBB1;
+}
+
+.description-font {
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 26px;
+   color: #262A3F;
+   opacity: 0.8;
+}
+
+
+//dark
+
+body.dark {
+   .title-font {
+      color: #ffffff;
+   }
+
+   .title-font-italic {
+      color: #689FF2;
+   }
+
+   .description-font {
+      color: white;
+      opacity: 0.8;
+   }
+}
