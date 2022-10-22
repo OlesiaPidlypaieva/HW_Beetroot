@@ -1,0 +1,114 @@
+.gallery {
+   flex: 1 0 100%;
+   position: relative;
+
+   .main-title {
+      margin-top: 200px;
+      margin-bottom: 90px;
+
+      @media (min-width: 1601px) {
+         margin-top: 100px;
+      }
+
+      @media (max-width: 1600px) {
+         margin-top: 100px;
+         margin-bottom: 50px;
+      }
+      
+      @media (max-width: 1400px) {
+         margin-top: 60px;
+         margin-bottom: 10px;
+            gap:10px;
+      }
+   }
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   &__images {
+      cursor: url(../img/4.Gallery/search.png) , pointer;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+      "img1 img2 img3"
+      "img1 img4 img5";
+      gap: 10px;
+
+      .img1 {
+         grid-area: img1;
+      }
+      .img2 {
+         grid-area: img2;
+      }
+      .img3 {
+         grid-area: img3;
+      }
+      .img4 {
+         grid-area: img4;
+      }
+      .img5 {
+         grid-area: img5;
+      }
+   }
+
+   .img1 {
+      max-width: 580px;
+
+      img {
+         width: 100%;
+      }
+   }
+
+   .img2 , .img3 , .img4 , .img5 {
+      max-width: 285px;
+
+      img {
+         width: 100%;
+      }
+   } 
+
+   @media (max-width: 1235px) {
+      .gallery__images {
+         padding-right: 25px;
+      }
+   }
+
+   @media (max-width: 768px) {
+
+      .gallery__images {
+         padding-right: 5px;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         grid-template-areas: 
+         "img1 img1"
+         "img1 img1"
+         "img2 img3"
+         "img4 img5";
+      }
+   }
+
+   .gallery__button {
+      width: 190px;
+      height: 50px;
+      border: 1px solid #2C4058;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      margin-bottom: 20px;
+   }
+}
+
+.fancybox__container img {
+   width: 580px;
+}

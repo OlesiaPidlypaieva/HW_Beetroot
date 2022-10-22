@@ -1,0 +1,134 @@
+.firstscreen {
+   background: url('../img/1.FirstScreen/firstScreenBG.webp') center / cover no-repeat, linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+   flex: 1 0 100%;
+   height: 100vh;
+   position: relative;
+
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+   }
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 5px;
+   }
+
+   &__title1 {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 98px;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+   }
+
+   &__title2 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.3em;
+      color: #FFFFFF;
+   }
+
+   &__scroll-button {     
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 17px;
+      color: #FFFFFF;
+      width: 40.09px;
+      height: 40px;
+      border: 1px solid rgb(255, 255, 255, 0.7);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .firstscreen__title1.animate__fadeInDown {
+      animation-delay: 0.5s;
+   }
+
+   .firstscreen__title2.animate__fadeInDown {
+      animation-delay: 1.5s;
+   }
+}
+
+.main-title {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   span {
+      display: block;
+      width: 100px;
+      height: 0px;
+      left: 750px;
+      top: 900px;
+      border: 1px solid #2C4058;
+   }
+
+   h2 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 54px;
+      text-align: center;
+      color: #2C4058;
+   }
+}
+
+@media (max-width:1400px) {
+   .main-title {
+      gap: 5px;
+      h2 {
+         font-size: 35px;
+      }
+   }
+}
+
+@media (max-width: 1023px) {
+   .firstscreen {
+      flex: none;
+      height: 800px;
+
+      &__title1 {
+         font-size: 60px;
+      }
+   
+      &__title2 {
+         font-size: 14px;
+         line-height: 22px;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .firstscreen {
+      height: 500px;
+   }
+}
+
+@media (max-width: 695px) {
+   .firstscreen__text {
+      text-align: center;
+   }
+   .firstscreen__title1 {
+      font-size: 40px;
+      line-height: 50px;
+   }
+
+   .firstscreen__title2 {
+      font-size: 14px;
+   }
+}
