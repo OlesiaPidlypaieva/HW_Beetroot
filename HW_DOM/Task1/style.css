@@ -1,0 +1,51 @@
+body {
+   background-color: #726e75;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   margin-top: 50px;
+   font-family: 'Roboto';
+   padding: 15px;
+}
+
+.title {
+   color: #DDE0BD;
+}
+
+.playlist {
+   display: flex;
+   flex-direction: column;
+   background-color: #948b89;
+   border-radius: 8px;
+   padding: 30px;
+   font-size: 20px;
+   border: 1px solid black;
+   box-shadow: 10px 5px 5px grey;
+}
+
+.playlist__item {
+   transition-duration: 0.3s;
+   cursor: pointer;
+}
+
+
+.playlist__item:hover .playlist__author {
+   color: #fdffd0;
+}
+
+
+.playlist__author {
+   color: #D0D1AC;
+}
+
+.playlist__item:hover .playlist__song {
+   color: #505c69;
+}
+
+.playlist__song {
+   color:#343b42;
+}

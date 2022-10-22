@@ -1,0 +1,63 @@
+.wrapper {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+.traffic-light {
+   width: 800px;
+   height: 800px;
+   background: url(light.png) center / cover no-repeat;
+   position: relative;
+}
+
+.traffic-light__red, .traffic-light__yellow, .traffic-light__green {
+   position:absolute;
+   width: 180px;
+   height: 180px;
+   background-color: grey;
+   border-radius: 50%;
+   left: 323px;
+}
+
+.traffic-light__red {
+   top: 85px;
+}
+
+.traffic-light__red.active {
+   background-color: red;
+}
+
+.traffic-light__yellow {
+   top: 310px;
+}
+
+.traffic-light__yellow.active {
+   background-color: yellow;
+}
+
+.traffic-light__green {
+   top: 535px;
+}
+
+.traffic-light__green.active {
+   background-color: green;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   color: black;
+   width: 200px;
+   height: 100px;
+   border: 1px dashed black;
+   border-radius: 10px;
+   font-size: 25px;
+   font-family: 'Roboto';
+}
