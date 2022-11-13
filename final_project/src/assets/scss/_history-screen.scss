@@ -1,0 +1,79 @@
+.history-screen {
+   min-height: 100vh;
+   height:100%;
+
+   &__title {
+      font-family: 'Bitter Rose';
+      font-size: 80px;
+      color: #FACE8D;
+      line-height: 90%;
+      letter-spacing: 0.05em
+   }
+
+   &__description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+   }
+
+   &__img {
+      max-width: 400px;
+      height: 1000px;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit:cover;
+         object-position: center;
+      }
+   }
+
+   &__text {
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 50%;
+      font-family: 'Chillax';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 100%;
+      color: white;
+      opacity: 0.8;
+      text-align: start;
+   }
+}
+
+@media (max-width: 920px) {
+   .history-screen {
+      &__wrapper {
+         padding-top: 100px;
+      }
+      &__title {
+         font-size: 50px;
+      }
+
+      &__text {
+         font-size: 20px;
+      }
+
+      &__img {
+         max-width: 400px;
+         height: 600px;
+   }
+}
+}
+
+@media (max-width: 424px) {
+   .history-screen {
+      &__description {
+         flex-direction: column;
+      }
+
+      &__text {
+         width: 100%;
+      }
+}
+}
