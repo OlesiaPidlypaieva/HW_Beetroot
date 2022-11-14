@@ -1,0 +1,143 @@
+.coctail {
+   &__wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__information {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__img {
+      max-width: 500px;
+      height: auto;
+
+
+      img {
+         width: 100%;
+         height: auto;
+         border-radius: 8px;
+         opacity: 0.8;
+         border: 1px solid rgb(250, 206, 141);
+      }
+   }
+
+   &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap:30px;
+      max-width: 60%;
+   }
+
+   .description__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      text-align: start;
+   }
+
+   .descrtiption__item, .coctail__instruction {
+      font-family: 'Chillax';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 100%;
+      color: white;
+      opacity: 0.8;
+   }
+
+   &__instruction {
+      display: flex;
+      align-items: flex-start;
+      text-align: start;
+   }
+}
+
+.random__button {
+   padding: 10px;
+   font-family: 'Chillax';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 25px;
+   line-height: 100%;
+   opacity: 0.8;
+   border-radius: 15px;
+   cursor: pointer;
+   transition-duration: 0.3s;
+}
+
+.random__button:hover {
+   transform: scale(0.95);
+}
+
+@media (max-width: 920px) {
+   .coctail {
+
+      &__title {
+         font-size: 50px;
+         padding-top: 50px;
+      }
+
+      .main-title {
+         font-size: 50px;
+      }
+
+      &__text {
+         font-size: 20px;
+      }
+
+      &__description {
+         .descrtiption__item {
+         font-size: 20px;
+         }
+      }
+
+      &__instruction {
+         font-size: 20px;
+      }
+}
+}
+
+@media (max-width: 768px) {
+   .coctail {
+
+      &__description {
+         max-width: 100%;
+         padding-bottom: 10px;
+      }
+      &__information {
+         flex-direction: column;
+      }
+      &__title {
+         font-size: 40px;
+         padding-top: 50px;
+      }
+
+      .main-title {
+         font-size: 40px;
+      }
+
+      &__text {
+         font-size: 15px;
+      }
+
+      &__description {
+         .descrtiption__item {
+         font-size: 15px;
+         }
+      }
+
+      .coctail__instruction {
+         font-size: 15px;
+      }
+}
+}

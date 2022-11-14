@@ -1,0 +1,53 @@
+.first-screen {
+   min-height: 100vh;
+   height:100%;
+   display: flex;
+
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+   }
+
+   &__img {
+      max-width: 600px;
+      height: auto;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit:cover;
+         object-position: center;
+      }
+   }
+
+   &__text {
+      font-family: 'Chillax';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 100%;
+      color: white;
+      opacity: 0.8;
+      text-align: end;
+   }
+}
+
+@media (max-width: 920px) {
+   .first-screen__text {
+      font-size: 50px;
+   }
+}
+
+@media (max-width: 768px) {
+   .first-screen__text {
+      font-size: 40px;
+   }
+}
